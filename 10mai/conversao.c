@@ -10,11 +10,8 @@ int main()
   segundosConvertidos = segundos % 60;
   minutos = segundos / 60;
 
-  if (minutos >= 60)
-  {
-    horas = minutos / 60;
-    minutos = minutos % 60;
-  }
+  horas = minutos / 60;
+  minutos = minutos % 60;
 
   printf("%d:%d:%d", horas, minutos, segundosConvertidos);
 
